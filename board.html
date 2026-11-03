@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Bay Board — Warnings &amp; Help on the Water | HBH</title>
+<meta name="description" content="The HBH Bay Board — boaters warning boaters: hazards, obstacles, blocked ramps, and calls for a hand on Fowl River, Portersville Bay, Mobile Bay, and Petit Bois Pass. On the water, the closest boat is your quickest help.">
+<style>
+  :root{--navy:#0b1f3a;--gold:#c9a227;--ink:#16202e;--paper:#f7f3ea;--line:#d8cfb8;--teal:#14586b;--alert:#8f1d1d}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--paper);color:var(--ink);line-height:1.6}
+  header{background:var(--navy);color:#fff;text-align:center;padding:1.8rem 1rem 1.2rem;border-bottom:6px solid var(--gold)}
+  header .thanks{letter-spacing:.14em;text-transform:uppercase;font-size:.8rem;color:var(--gold);margin:0 0 .6rem}
+  header img.logo{width:150px;max-width:44vw;height:auto;border-radius:50%}
+  h1{margin:.6rem 0 .2rem;font-size:2rem;line-height:1.15}
+  nav{background:var(--navy);border-top:1px solid #2a4468;text-align:center;padding:.55rem .4rem}
+  nav a{color:#e8e0c8;text-decoration:none;margin:0 .55rem;font-size:.98rem;white-space:nowrap}
+  nav a:hover{color:var(--gold)}
+  main{max-width:880px;margin:0 auto;padding:1.4rem 1.1rem 2.4rem}
+  h2{color:var(--navy);border-bottom:2px solid var(--gold);padding-bottom:.25rem;margin-top:2rem}
+  .card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:1rem 1.2rem;margin:1rem 0}
+  .alert{background:#fdf1f1;border:2px solid var(--alert);border-radius:10px;padding:1rem 1.2rem;margin:1rem 0}
+  .alert h2{color:var(--alert);border:none;margin-top:.2rem}
+  .alert .big{font-size:1.25rem;font-weight:bold}
+  .report{background:#fff;border:1px solid var(--line);border-left:6px solid var(--teal);border-radius:8px;padding:.8rem 1rem;margin:.7rem 0}
+  .report .type{font-weight:bold;color:var(--teal)}
+  .report .when{font-size:.85rem;color:#5a6472}
+  .btn{display:inline-block;background:var(--navy);color:#fff;text-decoration:none;padding:.65rem 1.2rem;border-radius:8px;margin:.3rem .3rem .3rem 0;font-weight:bold}
+  .btn.gold{background:var(--gold);color:var(--navy)}
+  .btn.alert-btn{background:var(--alert)}
+  footer{background:var(--navy);color:#e8e0c8;text-align:center;padding:1.4rem 1rem;font-size:.95rem}
+  footer a{color:var(--gold)}
+  .fine{font-size:.85rem;color:#5a6472}
+  .center{text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <p class="thanks">Thank God first</p>
+  <img class="logo" src="hbh-logo.png" alt="HBH emblem — a gold heron with spread wings over a ship's anchor">
+  <h1>The Bay Board</h1>
+</header>
+<nav>
+  <a href="index.html">Home</a><a href="story.html">The Story</a><a href="line.html">The Nautical Line</a><a href="music.html">Music of the Bay</a><a href="water.html">Tides &amp; Working Water</a><a href="board.html">The Bay Board</a><a href="wall.html">The Story Wall</a><a href="calendar.html">Seasons &amp; Events</a><a href="help.html">Find Help</a><a href="dock.html">Sign the Dock</a><a href="pray.html">Prayer</a>
+</nav>
+<main>
+  <div class="alert">
+    <h2>🚨 If you need help RIGHT NOW</h2>
+    <p class="big">VHF radio — Channel 16 · or call <a href="tel:911">911</a></p>
+    <p>U.S. Coast Guard, Sector Mobile command center (24 hours): <a href="tel:+12514416211"><strong>(251) 441-6211</strong></a><br>
+    Alabama Marine Patrol: <a href="tel:+18002727930"><strong>1-800-272-7930</strong></a></p>
+    <p style="margin-bottom:.2rem">Do not post an emergency here and wait. On the water, the closest boat is your quickest help — hail them on Channel 16 first, then post here so the next boats know.</p>
+  </div>
+
+  <h2>Boaters warning boaters</h2>
+  <p>This board is for the working water — <strong>Bayou La Batre, Fowl River, Portersville Bay, Mobile Bay, Petit Bois Pass</strong> and the ramps and runs between. See something that could hurt the next man — a submerged log, debris in the channel, a broken day-marker, a ramp tore up or blocked? Post it. Dead in the water and it's <em>not</em> an emergency? Post it, and let the closest boat find you. Got a boat and a willing hand? Say that here too.</p>
+  <p><a class="btn gold" href="https://forms.gle/sXgaMBVftJz9Y2S6A">Post a warning or ask for a hand →</a></p>
+
+  <h2>Latest on the board</h2>
+  <div id="reports"><p>Loading the latest reports…</p></div>
+  <p class="fine">Reports appear here as they come in, newest first. Every report also lands in the HBH inbox. Reports are posted by the public as-is — use your own judgment on the water, and when in doubt, hail Channel 16.</p>
+
+  <p class="center" style="margin-top:2rem"><em>Let us pray.</em></p>
+</main>
+<footer>
+  <p>Heron Bay Hoodlums — Heron Bay, Alabama · <a href="mailto:heronbayhoodlums@gmail.com">heronbayhoodlums@gmail.com</a> · One number: <a href="tel:+12513483677">(251) 348-3677</a></p>
+</footer>
+<script>
+(function(){
+  var SHEET='1h18DQd9iL-pha497gVoLkSIwRYL8VSf7YE9rzi9vWhQ';
+  var box=document.getElementById('reports');
+  function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+  fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
+    .then(function(r){return r.text()})
+    .then(function(t){
+      var j=JSON.parse(t.substring(t.indexOf('{'),t.lastIndexOf('}')+1));
+      var rows=(j.table&&j.table.rows)||[];
+      var items=[];
+      rows.forEach(function(rw){
+        var c=rw.c||[];
+        function v(i){return c[i]?(c[i].f||c[i].v||''):''}
+        if(!v(1)&&!v(3))return;
+        items.push({when:v(0),type:v(1),where:v(2),what:v(3),who:v(4),phone:v(5)});
+      });
+      if(!items.length){box.innerHTML='<div class="card"><p><strong>The water is clear — as far as anybody has told us.</strong> No warnings posted right now. Be the first eyes for the next boat: if you see something out there, post it above.</p></div>';return}
+      items.reverse();
+      box.innerHTML=items.map(function(it){
+        return '<div class="report"><span class="type">'+esc(it.type)+'</span> — <strong>'+esc(it.where)+'</strong><br>'+esc(it.what)+
+        (it.who?'<br><span class="when">Posted by '+esc(it.who)+'</span>':'')+
+        (it.phone?'<br><span class="when">Reach them: '+esc(it.phone)+'</span>':'')+
+        '<br><span class="when">'+esc(it.when)+'</span></div>';
+      }).join('');
+    })
+    .catch(function(){box.innerHTML='<div class="card"><p>The board could not load just now. The report door above still works — and on the water, Channel 16 always answers.</p></div>'});
+})();
+</script>
+</body>
+</html>
